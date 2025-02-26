@@ -71,7 +71,12 @@ document.getElementById('formatButton').addEventListener('click', function () {
 document.getElementById('copyButton').addEventListener('click', function () {
     const formattedText = document.getElementById('inputText').value;
     navigator.clipboard.writeText(formattedText).then(() => {
-        alert('Formatted math expressions copied to clipboard!');
+         // Display the formatted text in the output div
+        outputText.innerHTML = "<h1>copied to clipboard!<h1/>";
+        setTimeout(() => {
+        outputText.innerHTML= "";
+         }, 2000);
+       
     }).catch((err) => {
         console.error('Failed to copy text: ', err);
     });
