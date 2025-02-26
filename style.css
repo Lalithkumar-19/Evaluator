@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: url("/static/image.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+  
+
+/* Container Styles */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Textarea Styles */
+textarea {
+    width: 490px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    resize: none; /* Allows vertical resizing */
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Container Styles */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Copy Button Styles */
+#copyButton {
+    background-color: #28a745; /* Green for copy button */
+}
+
+#copyButton:hover {
+    background-color: #218838;
+}
+
+/* Reset Button Styles */
+#resetButton {
+    background-color: #dc3545; /* Red for reset button */
+}
+
+#resetButton:hover {
+    background-color: #c82333;
+}
+
+/* Output Div Styles */
+#outputText {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    min-height: 50px;
+    word-wrap: break-word; /* Ensures long text doesn't overflow */
+}
